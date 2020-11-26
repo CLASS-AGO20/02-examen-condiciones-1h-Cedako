@@ -22,6 +22,52 @@ export default class App {
             return kilometros*6.5;
         }
     }
+    
+    puedeCircular(dia, terminacion) {
+        switch (dia) {
+            case 1:
+                if (terminacion=0){
+                    return true;
+                }
+                else {
+                    return false
+                }
+                break;
+            case 2:
+                if (terminacion=0){
+                    return true;
+                }
+                else {
+                    return false
+                }
+                break;
+            case 3:
+                if (terminacion=0){
+                    return true;
+                }
+                else {
+                    return false
+                }
+                break;
+            case 4:
+                if (terminacion=0){
+                    return true;
+                }
+                else {
+                    return false
+                }
+                break;
+            case 5:
+                if (terminacion=0){
+                    return true;
+                }
+                else {
+                    return false
+                }
+                break;
+            case 6:
+        }
+    }
 
 }
 
