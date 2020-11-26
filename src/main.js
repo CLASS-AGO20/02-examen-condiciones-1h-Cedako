@@ -104,7 +104,7 @@ let app = new App();
 
 console.log(app.convertir(1999));
 console.log(app.convertir(2000));
-console.log(app.costoRenta(50));
+console.log(app.costoRenta(49));
 console.log(app.costoRenta(60));
 console.log(app.costoRenta(101));
 console.log(app.costoRenta(300));
