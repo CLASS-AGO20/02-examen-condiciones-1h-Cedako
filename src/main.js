@@ -26,46 +26,75 @@ export default class App {
     puedeCircular(dia, terminacion) {
         switch (dia) {
             case 1:
-                if (terminacion=0){
+                if (terminacion===0){
+                    return true;
+                }
+                else if (terminacion != 1 && terminacion != 2) {
                     return true;
                 }
                 else {
-                    return false
+                    return false;
                 }
                 break;
             case 2:
-                if (terminacion=0){
+                if (terminacion===1){
+                    return true;
+                }
+                else if (terminacion!=0 && terminacion!=2) {
                     return true;
                 }
                 else {
-                    return false
+                    return false;
                 }
                 break;
             case 3:
-                if (terminacion=0){
+                if (terminacion===2){
+                    return true;
+                }
+                else if (terminacion!=0 && terminacion!=1) {
                     return true;
                 }
                 else {
-                    return false
+                    return false;
                 }
                 break;
             case 4:
-                if (terminacion=0){
+                if (terminacion===2){
+                    return true;
+                }
+                else if (terminacion!=0 && terminacion!=1) {
                     return true;
                 }
                 else {
-                    return false
+                    return false;
                 }
                 break;
             case 5:
-                if (terminacion=0){
+                if (terminacion!=0 && terminacion!=1 && terminacion!=2){
                     return true;
                 }
                 else {
-                    return false
+                    return false;
                 }
                 break;
             case 6:
+                if (terminacion!=0 && terminacion!=1 && terminacion!=2){
+                    return true;
+                }
+                else {
+                    return false;
+                }
+                break;
+            case 7:
+                if (terminacion!=0 && terminacion!=1 && terminacion!=2){
+                    return true;
+                }
+                else {
+                    return false;
+                }
+                break;
+                default:
+                    return false;
         }
     }
 
@@ -79,3 +108,8 @@ console.log(app.costoRenta(50));
 console.log(app.costoRenta(60));
 console.log(app.costoRenta(101));
 console.log(app.costoRenta(300));
+console.log(app.puedeCircular(1,0));
+console.log(app.puedeCircular(1,2));
+console.log(app.puedeCircular(1,3));
+console.log(app.puedeCircular(2,1));
+console.log(app.puedeCircular(7,1));
